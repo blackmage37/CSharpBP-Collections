@@ -29,6 +29,15 @@ namespace Acme.Biz
             return vendor;
         }
 
+        public T RetrieveValue<T>(string sql, T defaultValue)
+        {
+            // call database to retrieve value
+            // if not value returned, return default value
+            T value = defaultValue;
+
+            return value;
+        }
+
         /// <summary>
         /// Save data for one vendor.
         /// </summary>
